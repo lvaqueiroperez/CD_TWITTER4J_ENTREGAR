@@ -11,8 +11,8 @@ import twitter4j.conf.ConfigurationBuilder;
 import java.util.*;
 
 /**
- * Clase donde se implementa todo el código y métodos del programa (en cada
- * método se han configurado los "OAuth Credentials" con un builder)
+ * Clase donde se implementa todo el código y métodos del programa (se han
+ * configurado los "OAuth Credentials" en un fichero a parte en la ClassPath.)
  *
  * @author luis-
  */
@@ -33,11 +33,6 @@ public class Methods {
         Scanner read = new Scanner(System.in);
 
         ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("YuBc0S4HnopaKfe0ny4o4tefa")
-                .setOAuthConsumerSecret("XPDrzHQ0ZeP3lSN1K44WkZ8LedWnZh0LtIewD8k0Oe6h7fKgM8")
-                .setOAuthAccessToken("1108644141657935872-2DIWZ5zAW2RlbPyh4p5KZzu5uRBgwY")
-                .setOAuthAccessTokenSecret("GGsFaIZkBDvUjj7WWLmGoClHqrryQ8s60U5JBd4C2uUHG");
 
         /**
          * Creación de objeto Singleton tipo "Twitter" a través de un Factory.
@@ -75,11 +70,6 @@ public class Methods {
     public static void timeLine() throws TwitterException {
 
         ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("YuBc0S4HnopaKfe0ny4o4tefa")
-                .setOAuthConsumerSecret("XPDrzHQ0ZeP3lSN1K44WkZ8LedWnZh0LtIewD8k0Oe6h7fKgM8")
-                .setOAuthAccessToken("1108644141657935872-2DIWZ5zAW2RlbPyh4p5KZzu5uRBgwY")
-                .setOAuthAccessTokenSecret("GGsFaIZkBDvUjj7WWLmGoClHqrryQ8s60U5JBd4C2uUHG");
 
         TwitterFactory tf = new TwitterFactory(cb.build());
         Twitter twitter = tf.getInstance();
@@ -117,11 +107,6 @@ public class Methods {
         Scanner read2 = new Scanner(System.in);
 
         ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("YuBc0S4HnopaKfe0ny4o4tefa")
-                .setOAuthConsumerSecret("XPDrzHQ0ZeP3lSN1K44WkZ8LedWnZh0LtIewD8k0Oe6h7fKgM8")
-                .setOAuthAccessToken("1108644141657935872-2DIWZ5zAW2RlbPyh4p5KZzu5uRBgwY")
-                .setOAuthAccessTokenSecret("GGsFaIZkBDvUjj7WWLmGoClHqrryQ8s60U5JBd4C2uUHG");
 
         TwitterFactory tf = new TwitterFactory(cb.build());
         Twitter twitter = tf.getInstance();
